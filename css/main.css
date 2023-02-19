@@ -1,0 +1,90 @@
+/* Variables generales */
+/* Estilos generales */
+body, body.index, body.mapa, body.hoteles, body.contacto {
+  font-family: "Montserrat", sans-serif; }
+
+.copyright {
+  font-size: 12px; }
+
+div.menu-item {
+  display: inline-block;
+  margin: 0px 30px; }
+
+/* Imports */
+/* Variables */
+/* Estilos */
+body.index {
+  background-image: url("../img/barcovela.JPEG");
+  background-size: cover; }
+  body.index header {
+    color: #064141;
+    text-align: center; }
+  body.index section h2 {
+    color: #06026b; }
+
+body.mapa {
+  background-color: #617282; }
+  body.mapa header {
+    text-align: center;
+    font-size: larger; }
+  body.mapa header nav ul li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #260447; }
+  body.mapa main {
+    font-size: medium; }
+
+body.hoteles {
+  background-color: #617282;
+  /* estilos de main */
+  /* estilos del contenedor */ }
+  body.hoteles header {
+    text-align: center;
+    font-size: larger; }
+  @media screen and (min-width: 1024px) {
+    body.hoteles header div {
+      transition: 3s; }
+    body.hoteles header div:hover {
+      transform: scale(0.9);
+      transition: 3sg;
+      background-color: white;
+      box-shadow: 1px 1px 1px black; } }
+  body.hoteles main {
+    font-size: medium; }
+  body.hoteles .contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; }
+  body.hoteles .Home {
+    background-color: brown; }
+
+body.pasajes {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #617282;
+  /* estilos de header */
+  /* estilos de main */ }
+  body.pasajes header {
+    text-align: center;
+    font-size: larger; }
+  body.pasajes header nav ul li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #260447; }
+  body.pasajes main {
+    font-size: medium; }
+
+body.contacto {
+  background-image: url(../img/buceoyfishes.JPG); }
+  body.contacto header {
+    font-size: larger;
+    text-align: center; }
+  @media screen and (min-width: 1024px) {
+    body.contacto header div {
+      transition: 3s; }
+    body.contacto header div:hover {
+      transform: scale(0.9);
+      transition: 3sg;
+      background-color: #410387;
+      box-shadow: 1px 1px 1px black; } }
