@@ -1,0 +1,23 @@
+/* Variables generales */
+$main-font: 'Montserrat', sans-serif;
+
+/* Estilos generales */
+body {
+    font-family: $main-font;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+div.menu-item {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+/* Imports */
+@import 'index';
+@import 'mapa';
+@import 'hoteles';
+@import 'pasajes';
+@import 'contacto';

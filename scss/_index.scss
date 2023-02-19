@@ -1,0 +1,18 @@
+/* Variables */
+$image-barco: url("../img/barcovela.JPEG");
+
+/* Estilos */
+body.index {
+    @extend body;
+    background-image: $image-barco;
+    background-size: cover;
+
+    header {
+        color: rgb(6, 65, 65);
+        text-align: center;
+    }
+    
+    section h2 {
+        color: rgb(6, 2, 107);
+    }
+}
