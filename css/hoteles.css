@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(97, 114, 130);
+}
+
+/* estilos de header */
+header{
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (min-width:1024px) {
+    
+    header div  {
+        transition: 3s;
+    }
+    
+        header div:hover{
+            transform: scale(0.9)
+            transition: 3sg;
+            background-color: white;
+            box-shadow: 1px 1px 1px black;
+        }
+        
+      }
+
+/* estilos de main */
+main{
+    font-size: medium;
+}
+/* estilos del contenedor */
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.Home{
+    background-color: brown;
+}
