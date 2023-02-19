@@ -43,32 +43,18 @@
 </header>
 
 <!-- Formulario -->
-<form> 
-    <fieldset>
-        <legend> Envia tus datos </legend>
-        <div>
-            <label for="nombre"> 
-                Completa tu Nombre
-            </label>
-            <input type="text"name="nombre">
+    <form> 
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Tu Consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
         <div>
-            <label for="">
-                Completa tu Email
-            </label>
-            <input type="Email" name="Email"
-            placeholder="egipto@gmail.com" >
+            <button type="submit" class="btn btn-secondary">Enviar</button>
         </div>
-        <div>
-            <label for="Tu pregunta">
-                Tu pregunta
-                <input type="text"name="pregunta">
-            </label>
-        </div>
-        <div>
-            <input type="submit">
-        </div>
-    </fieldset>
     </form>
 
     <footer>
