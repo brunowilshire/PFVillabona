@@ -1,20 +1,53 @@
-body.mapa {
+// Mixin para centrar elementos
+@mixin center-element {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  // Clase para el cuerpo de la página
+  body.mapa {
     @extend body;
     background-color: rgb(97, 114, 130);
-
+  
     header {
-        text-align: center;
-        font-size: larger;
+      text-align: center;
+      font-size: larger;
     }
-
+  
     header nav ul li {
-        list-style: none;
-        font-size: 20px;
-        font-weight:bold;
-        color: rgb(38, 4, 71);
+      list-style: none;
+      font-size: 20px;
+      font-weight: bold;
+      color: rgb(38, 4, 71);
     }
-
+  
     main {
-        font-size: medium;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: medium;
+  
+      @media screen and (min-width: 768px) {
+        max-width: 768px;
+        margin: 0 auto;
+      }
+  
+      @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+      }
     }
-}
+  
+    // Clase para contenedor de imagen principal
+    .main-image-container {
+      @include center-element;
+  
+      img {
+        // Estilos adicionales para la imagen, si se necesitan
+      }
+    }
+  }
+  
+
+  
+  

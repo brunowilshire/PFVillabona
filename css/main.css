@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables generales */
 /* Estilos generales */
 body, body.index, body.mapa, body.hoteles, body.contacto {
@@ -17,9 +18,13 @@ body.index {
   background-image: url("../img/barcovela.JPEG");
   background-size: cover; }
   body.index header {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #064141;
     text-align: center; }
   body.index section h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     color: #06026b; }
 
 body.mapa {
@@ -33,37 +38,81 @@ body.mapa {
     font-weight: bold;
     color: #260447; }
   body.mapa main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: medium; }
+    @media screen and (min-width: 768px) {
+      body.mapa main {
+        max-width: 768px;
+        margin: 0 auto; } }
+    @media screen and (min-width: 1024px) {
+      body.mapa main {
+        max-width: 1024px; } }
+  body.mapa .main-image-container {
+    display: flex;
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */ }
 
 body.hoteles {
   background-color: #617282;
-  /* estilos de main */
-  /* estilos del contenedor */ }
+  /* Media queries para pantallas más grandes */ }
   body.hoteles header {
     text-align: center;
     font-size: larger; }
-  @media screen and (min-width: 1024px) {
     body.hoteles header div {
-      transition: 3s; }
-    body.hoteles header div:hover {
-      transform: scale(0.9);
-      transition: 3sg;
-      background-color: white;
-      box-shadow: 1px 1px 1px black; } }
-  body.hoteles main {
-    font-size: medium; }
-  body.hoteles .contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr; }
-  body.hoteles .Home {
-    background-color: brown; }
+      border: 1px solid black;
+      padding: 10px; }
+    body.hoteles header h1 {
+      font-size: xx-large;
+      margin-top: 20px;
+      color: white; }
+  @media screen and (min-width: 768px) {
+    body.hoteles {
+      /* Estilos de main para pantallas más grandes */ }
+      body.hoteles header {
+        font-size: x-large;
+        display: flex;
+        justify-content: center; }
+        body.hoteles header div {
+          transition: 3s; }
+          body.hoteles header div:hover {
+            transform: scale(0.9);
+            transition: 3s;
+            background-color: white;
+            box-shadow: 1px 1px 1px black; }
+      body.hoteles main {
+        font-size: large; } }
+
+.botones-hoteles {
+  text-align: center; }
+
+.boton-hotel {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 4px; }
+
+.boton-hotel:hover {
+  background-color: #3e8e41; }
 
 body.pasajes {
   font-family: 'Montserrat', sans-serif;
   background-color: #617282;
-  /* estilos de header */
-  /* estilos de main */ }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Estilos de header */
+  /* Estilos de main */
+  /* Estilos de links */ }
   body.pasajes header {
     text-align: center;
     font-size: larger; }
@@ -71,20 +120,78 @@ body.pasajes {
     list-style: none;
     font-size: 20px;
     font-weight: bold;
-    color: #260447; }
+    color: #260447;
+    text-align: center; }
   body.pasajes main {
-    font-size: medium; }
+    font-size: medium;
+    text-align: center; }
+    body.pasajes main h2 {
+      margin-top: 0; }
+  body.pasajes a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; }
 
 body.contacto {
   background-image: url(../img/buceoyfishes.JPG); }
   body.contacto header {
-    font-size: larger;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: larger; }
+  body.contacto section header {
+    display: none; }
+  body.contacto section h1 {
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 20px; }
+  body.contacto section .container {
+    border: 1px solid black;
+    padding: 10px;
     text-align: center; }
+    body.contacto section .container div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto; }
+    body.contacto section .container input[type="email"],
+    body.contacto section .container textarea {
+      font-size: small;
+      padding: 5px;
+      width: 100%;
+      height: 100%;
+      max-width: 50px;
+      max-height: 50px; }
+  body.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    body.contacto form .form-control {
+      width: 300px;
+      height: 200px; }
+    body.contacto form input[type="email"],
+    body.contacto form textarea {
+      font-size: small;
+      padding: 5px; }
+    body.contacto form button[type="submit"] {
+      margin-top: 10px; }
+  body.contacto form div input[type="email"] {
+    width: 150px;
+    height: 60px; }
+  body.contacto form div textarea {
+    width: 400px;
+    height: 300px; }
+  @media screen and (min-width: 768px) {
+    body.contacto section h1 {
+      font-size: xxx-large; } }
   @media screen and (min-width: 1024px) {
-    body.contacto header div {
-      transition: 3s; }
-    body.contacto header div:hover {
-      transform: scale(0.9);
-      transition: 3sg;
-      background-color: #410387;
-      box-shadow: 1px 1px 1px black; } }
+    body.contacto section h1 {
+      font-size: xxxx-large; } }

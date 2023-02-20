@@ -2,37 +2,66 @@ body.hoteles {
     @extend body;
     background-color: rgb(97, 114, 130);
 
-
     header {
         text-align: center;
         font-size: larger;
-    }
 
-    @media screen and (min-width:1024px) {
-        header div  {
-            transition: 3s;
+        div {
+            border: 1px solid black;
+            padding: 10px;
         }
-        
-        header div:hover {
-            transform: scale(0.9);
-            transition: 3sg;
-            background-color: white;
-            box-shadow: 1px 1px 1px black;
+
+        h1 {
+            font-size: xx-large;
+            margin-top: 20px;
+            color: white;
         }
     }
 
-    /* estilos de main */
-    main {
-        font-size: medium;
+    /* Media queries para pantallas más grandes */
+    @media screen and (min-width: 768px) {
+        header {
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+
+            div {
+                transition: 3s;
+
+                &:hover {
+                    transform: scale(0.9);
+                    transition: 3s;
+                    background-color: white;
+                    box-shadow: 1px 1px 1px black;
+                }
+            }
+        }
+
+        /* Estilos de main para pantallas más grandes */
+        main {
+            font-size: large;
+        }
+        }
     }
 
-    /* estilos del contenedor */
-    .contenedor {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    .botones-hoteles {
+        text-align: center;
     }
-    .Home {
-        background-color: brown;
+    
+    .boton-hotel {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px;
+        border-radius: 4px;
     }
-}
+    
+    .boton-hotel:hover {
+        background-color: #3e8e41;
+    }
+    
+    
