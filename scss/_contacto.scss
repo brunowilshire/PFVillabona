@@ -7,6 +7,18 @@ body.contacto {
       text-align: center;
       padding: 10px;
       font-size: larger;
+      .container {
+        background-color: gray;
+        
+        .row {
+          .col {
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+      
     }
   
     section {

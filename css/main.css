@@ -144,6 +144,10 @@ body.contacto {
     text-align: center;
     padding: 10px;
     font-size: larger; }
+    body.contacto header .container {
+      background-color: gray; }
+      body.contacto header .container .row .col a {
+        color: white; }
   body.contacto section header {
     display: none; }
   body.contacto section h1 {
