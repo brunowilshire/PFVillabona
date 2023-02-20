@@ -2,8 +2,12 @@ body.pasajes {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(97, 114, 130);
 
-    /* estilos de header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    /* Estilos de header */
     header{
         text-align: center;
         font-size: larger;
@@ -13,11 +17,29 @@ body.pasajes {
         font-size: 20px;
         font-weight:bold;
         color: rgb(38, 4, 71);
+        text-align: center;
     }
     
-    /* estilos de main */
-
+    /* Estilos de main */
     main{
         font-size: medium;
+        text-align: center;
+    
+        h2 {
+            margin-top: 0;
+        }
+    }    
+    
+
+    /* Estilos de links */
+    a {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: green;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
     }
 }
